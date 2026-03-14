@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table{
+        width: 600px;
+            color: darkblue;
+            
+        }
+        .container{
+            color: blue;
+            text-align: center;
+        }
+        .container1{
+            color: white;
+            background-color: darkblue;
+        }
+        .container2{
+            color: white;
+            background-color:deeppink;
+            text-align: center;
+        }
+        .container7{
+            color: white;
+            background-color: deeppink;
+            text-align: center;
+        }
+        .container12{
+            color: yellow;
+            background-color: darkblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let table=document.createElement("table");
+        table.className="table";
+        table.border="1";
+        table.style.borderCollapse="collapse";
+        let row=document.createElement("tr");
+        row.className="container";
+        var arr=["ఇండియా","న్యూజిలాండ్‌"];
+        arr.forEach(ele=>{
+            let data=document.createElement("td");
+            data.innerHTML=ele;
+            data.colSpan="3"
+            row.appendChild(data);
+            table.appendChild(row);
+        });
+        let row1=document.createElement("tr");
+        row1.className="container1";
+        let data=document.createElement("td");
+        data.colSpan="6"
+            data.innerHTML="Narendra Modi Stadium, అహ్మదాబాద్";
+            row1.appendChild(data);
+            table.appendChild(row1);
+            data.style.textAlign="center";
+        
+        let row2=document.createElement("tr");
+        row2.className="container2";
+        var arr=["255-5","159"];
+        arr.forEach(ele=>{
+            let data=document.createElement("td");
+            data.colSpan="3"
+            data.innerHTML=ele;
+            row2.appendChild(data);
+            table.appendChild(row2);
+        });
+        let row3=document.createElement("tr");
+        var arr=["samson","89","46","seephart","52","26"];
+        arr.forEach(ele=>{
+            let data=document.createElement("td");
+            data.innerHTML=ele;
+            row3.appendChild(data);
+            table.appendChild(row3);
+        });
+        let row4=document.createElement("tr");
+        var arr=["Kishan","54","25","samtars","43","35"];
+        arr.forEach(ele=>{
+            let data=document.createElement("td");
+            data.innerHTML=ele;
+            row4.appendChild(data);
+            table.appendChild(row4);
+        });
+        let row5=document.createElement("tr");
+        var arr=["Abhisheck","52","21","Michel","17","11"];
+        arr.forEach(ele=>{
+            let data=document.createElement("td");
+            data.innerHTML=ele;
+            row5.appendChild(data);
+            table.appendChild(row5);
+        });
+        let row6=document.createElement("tr");
+        var arr=["Dube","26","8","Alen","9","7"];
+        arr.forEach(ele=>{
+            let data=document.createElement("td");
+            data.innerHTML=ele;
+            row6.appendChild(data);
+            table.appendChild(row6);
+        });
+        let row7=document.createElement("tr");
+        row7.className="container7";
+        var arr=["20 Overs","19 Overs"];
+        arr.forEach(ele=>{
+            let data=document.createElement("td");
+            data.innerHTML=ele;
+            row7.appendChild(data);
+            data.colSpan="3"
+            table.appendChild(row7);
+        });
+        let row8=document.createElement("tr");
+        var arr=["Neesham","3-46","4","Boomra","4-15","4"];
+        arr.forEach(ele=>{
+            let data=document.createElement("td");
+            data.innerHTML=ele;
+            row8.appendChild(data);
+            table.appendChild(row8);
+        });
+        let row9=document.createElement("tr");
+        var arr=["Ravindra","1-32","2","Aksar","3-27","3"];
+        arr.forEach(ele=>{
+            let data=document.createElement("td");
+            data.innerHTML=ele;
+            row9.appendChild(data);
+            table.appendChild(row9);
+        });
+        let row10=document.createElement("tr");
+        var arr=["Henree","1-49","4","Abhisheck","1-5","1"];
+        arr.forEach(ele=>{
+            let data=document.createElement("td");
+            data.innerHTML=ele;
+            row10.appendChild(data);
+            table.appendChild(row10);
+        });
+        let row11=document.createElement("tr");
+        var arr=["","","","Hardik","1-36","4"];
+        arr.forEach(ele=>{
+            let data=document.createElement("td");
+            
+            data.innerHTML=ele;
+            row11.appendChild(data);
+            table.appendChild(row11);
+            
+        });
+        let row12=document.createElement("tr");
+        row12.className="container12";
+        let data1=document.createElement("td");
+            data1.innerHTML="ఇండియా 96 పరుగుల తేడాతో ఘన విజయం";
+            row12.appendChild(data1);
+            table.appendChild(row12);
+            data1.textAlign="center"
+            data1.colSpan="6"
+ 
+        console.log(document.body.appendChild(table));
+        
+    </script>
+</body>
+</html>
