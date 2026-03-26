@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        async function getdata() {
+            let res=await fetch("https://jsonplaceholder.typicode.com/photos");
+            let data=await res.json();
+            Getdata(data);
+            console.log(data);
+            
+        }
+        function Getdata(data1){
+            let container=document.getElementsByClassName("container")[0];
+            data1.forEach(ele => {
+                
+                let p=document.createElement("p");
+                p.innerHTML=`Id : ${ele.id}
+                             Title: ${ele.title}
+                
+                `
+                container.appendChild(p);
+                
+            });
+        
+
+            // for(i=0;i<100;i++){
+            //     let p=document.createElement("p");
+            //     p.innerHTML=`Id:${data1.id}`
+            //     container.appendChild(p);
+            // }
+
+        }
+        getdata();
+    </script>
+</body>
+</html>
